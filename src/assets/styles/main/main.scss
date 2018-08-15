@@ -11,12 +11,15 @@
 :global {
   // screens:start
   @import 'screens/base';
-  
+
   @import 'screens/screen_1';
   // screens:end
 
   // components:start
   @import 'components/forms';
   @import 'components/buttons';
+  @import 'components/header';
+  @import 'components/main';
+  @import 'components/checkbox';
   // components:end
 }

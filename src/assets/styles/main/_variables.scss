@@ -1,0 +1,25 @@
+$gray: #ECECEC;
+$gray-alt: #DBDBDB;
+$main-color: #1271FF;
+$lightblue: #35A9FE;
+$dark: #0E1D44;
+$white: white;
+
+$font: 'Montserrat', sans-serif;
+
+$light: 300;
+$regular: 400;
+$medium: 500;
+$semibold: 600;
+$bold: 700;
+
+// Breakpoints
+$breakpoints: (
+  xs: 20em,
+  sm: 30em,
+  md: 64em,
+  lg: 81em,
+) !default;
+
+$columns: 12;
+$column-gutter: 30px;

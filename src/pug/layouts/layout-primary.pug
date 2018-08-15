@@ -11,6 +11,8 @@ html(lang='en')
     link(rel='manifest' href='assets/head/manifest.json')
     link(rel="shortcut icon" href="assets/head/favico.ico")
     link(rel="icon" type="image/png" href="assets/head/favicon.png")
+    link(href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet")
+
     if production
       link(rel='stylesheet', href='assets/css/vendor.min.css')
       link(rel='stylesheet', href='assets/css/main.min.css')
@@ -22,7 +24,6 @@ html(lang='en')
 
   body
     include includes/mixins
-    include general/menu
     block content
       //- This gets replaced by content per page
 
@@ -31,6 +32,7 @@ html(lang='en')
       //- If extra footer content is necessary per page, it can be added per screen
 
     if production
+      script(src='https//code.jquery.com/jquery-3.3.1.min.js')
     script(src='assets/js/main.js')
     block scripts
       //- Also if more scripts are needed you can hook in here <3

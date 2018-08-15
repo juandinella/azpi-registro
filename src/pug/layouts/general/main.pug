@@ -1,0 +1,72 @@
+section.main
+  header
+    h1 Welcome to La Garcha
+  section
+    .row
+      .col-md-8
+        .accordion--block
+          .accordion--head
+            .step-number 1
+            h4 Subscriptions
+            i.completed: +svg('tick')
+          .accordion--body
+            p Xisco cara de poronga de viejo
+        .accordion--block
+          .accordion--head
+            .step-number 2
+            h4 Company Info
+          .accordion--body
+            p Xisco cara de poronga de viejo
+        .accordion--block
+          .accordion--head
+            .step-number 3
+            h4 Payment options
+          .accordion--body
+            p Xisco cara de poronga de viejo
+        .accordion--block
+          .accordion--head
+            .step-number 4
+            h4 Place order
+          .accordion--body
+            .place-order.row
+              .col-md-8
+                h5 Your total yearly subscription that you are paying now is:
+                p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+              .col-md-4.place-order--right
+                span 3.954 Eur
+            .row.terms
+              input.styled-checkbox#terms(type="checkbox")
+              label(for="terms") I agree to the #[a(href="", title="") Terms & Conditions]
+        a.btn(href="", title="") Proceed the Payment
+        
+      aside.aside.col-md-4
+        .aside--block
+          h2 Subscription summary
+          p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy 
+        .aside--block.aside--list
+          .aside--block__item
+            span Croatia
+            span 1.200 EUR
+          .aside--block__item
+            span Portugal
+            span 1.000 EUR
+          .aside--block__item
+            span Spain
+            span 900 EUR
+        .aside--block.aside--subtotal
+          .aside--block__item
+            span SUBTOTAL
+            span 4.100 EUR
+        .aside--block.aside--taxes
+          .aside--block__item
+            span Taxes and whatnot
+              +svg('help')
+            span 454 EUR
+        .aside--block.aside--coupon
+          .aside--block__item
+            span Coupon DEMO2019
+              button.remove-coupon Remove coupon
+            span -600 EUR
+        .aside--total
+          h6 Your yearly Subscription
+          span 3.954 EUR

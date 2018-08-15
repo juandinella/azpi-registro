@@ -1,0 +1,32 @@
+.mainHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.20);
+  position: relative;
+  z-index: 2;
+
+  &--logo {
+    img {
+      width: 120px;
+      height: auto;
+    }
+  }
+
+  &--lang {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+
+
+    span {
+      font-size: 10px;
+    }
+
+    svg {
+      stroke: $main-color;
+      width: 18px;
+    }
+  }
+}

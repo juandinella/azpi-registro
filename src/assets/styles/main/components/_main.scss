@@ -1,0 +1,236 @@
+.main {
+  background-color: $gray;
+  padding: 22px;
+
+  @include breakpoint(sm) {
+    padding: 33px;
+  }
+
+  header {
+    text-align: center;
+    margin-bottom: 22px;
+
+    @include breakpoint(sm) {
+      margin-bottom: 44px;
+    }
+
+    h1 {
+      font-weight: $medium;
+      font-size: 16px;
+      margin: 0;
+    }
+  }
+}
+
+.aside {
+  h2 {
+    font-weight: $medium;
+    font-size: 16px;
+    margin-top: 0;
+  }
+
+  p {
+    font-weight: $light;
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
+  &--block {
+    border-bottom: 1px solid $gray-alt;
+
+    &__item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 4px 0;
+
+      span {
+        font-size: 14px;
+        font-weight: $semibold;
+      }
+    }
+  }
+
+  &--list,
+  &--subtotal,
+  &--taxes,
+  &--coupon {
+    padding: 10px 0;
+  }
+
+  &--taxes {
+    span {
+      font-weight: $light;
+
+      &:first-of-type {
+        font-size: 11px;
+        display: flex;
+        align-items: center;
+
+        svg {
+          cursor: pointer;
+          width: 12px;
+          margin-left: 4px;
+          stroke: $lightblue;
+        }
+      }
+    }
+  }
+
+  &--coupon {
+    span {
+      font-weight: $light;
+
+      &:first-of-type {
+        font-size: 11px;
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+
+  &--total {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 15px;
+
+    span,
+    h6 {
+      color: $main-color;
+    }
+
+    h6 {
+      margin: 0;
+      font-size: 14px;
+    }
+  }
+}
+
+.remove-coupon {
+  color: $lightblue;
+  text-decoration: underline;
+  font-weight: $medium;
+}
+
+
+.accordion {
+
+  &--block {
+    margin-bottom: 10px;
+    border: 1px solid $gray-alt;
+    border-radius: 2px;
+  }
+
+  &--head {
+    background-color: $white;
+    display: flex;
+    align-items: center;
+    padding: 8px 22px;
+    cursor: pointer;
+    border-radius: 2px;
+    position: relative;
+
+    .completed {
+      position: absolute;
+      right: 20px;
+      top: 10px;
+    }
+
+    .step-number {
+      color: $main-color;
+      border: 1px solid $main-color;
+      border-radius: 100%;
+      width: 17px;
+      height: 17px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 11px;
+      margin-right: 10px;
+    }
+
+    h4 {
+      margin: 0;
+      font-weight: $medium;
+      font-size: 14px;
+    }
+
+    &.is-open {
+      background-color: #FAFAFA;
+
+      .step-number {
+        background-color: $main-color;
+        color: $white;
+      }
+
+      h4 {
+        color: $main-color;
+      }
+    }
+  }
+
+  &--body {
+    background-color: $white;
+    display: none;
+    padding: 30px 20px;
+    border-top: 1px solid $gray-alt;
+    border-radius: 0 0 2px 2px;
+
+    p {
+      margin: 0;
+    }
+  }
+}
+
+.place-order {
+
+  &--right {
+    text-align: right;
+  }
+
+  h5 {
+    margin: 0;
+    font-size: 14px;
+    font-weight: $semibold;
+    margin-bottom: 5px;
+  }
+
+  p {
+    font-size: 12px;
+    font-weight: $light;
+    line-height: 1.4;
+  }
+
+  span {
+    font-size: 14px;
+    font-weight: $semibold;
+    color: $main-color;
+  }
+}
+
+
+.btn {
+  background-color: $main-color;
+  color: $white;
+  text-decoration: none;
+  width: 77%;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  border-radius: 4px;
+  padding: 10px 0;
+  font-size: 13px;
+  font-weight: $medium;
+  transition: all 0.225s ease;
+  margin-top: 20px;
+
+  &:hover {
+    background-color: darken($main-color, 10%);
+  }
+}
+
+.terms {
+  margin-top: 30px;
+  margin-left: 15px;
+}
